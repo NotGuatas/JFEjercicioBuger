@@ -15,5 +15,6 @@ namespace JFEjercicioBuger.Data
         }
 
         public DbSet<JFEjercicioBuger.Models.Burguer> Burguer { get; set; } = default!;
+        public DbSet<JFEjercicioBuger.Models.Promo> Promo { get; set; } = default!;
     }
 }
