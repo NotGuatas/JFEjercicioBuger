@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using JFEjercicioBuger.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<JFEjercicioBugerContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("JFEjercicioBugerContext") ?? throw new InvalidOperationException("Connection string 'JFEjercicioBugerContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

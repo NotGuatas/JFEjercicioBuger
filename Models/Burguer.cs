@@ -4,7 +4,7 @@ namespace JFEjercicioBuger.Models
 {
     public class Burguer
     {
-        public int BurgerId { get; set; }
+        public int BurguerId { get; set; }
         [Required]
 
         public string? Name { get; set; }
