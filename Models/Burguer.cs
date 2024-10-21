@@ -14,5 +14,6 @@ namespace JFEjercicioBuger.Models
 
         public decimal Price { get; set; }
 
+        public List<Promo>? Promos { get; set; }
     }
 }
